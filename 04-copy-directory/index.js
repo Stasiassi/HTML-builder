@@ -4,7 +4,7 @@ const promises = require("fs/promises");
 const initialDirectory = path.join(__dirname,"files");
 const copyDirectory = path.join(__dirname,"files-copy");
 
-(async function foo(initialDirectory,copyDirectory) 
+(async function copyDirectory(initialDirectory,copyDirectory) 
 {
     await promises.mkdir(copyDirectory,{ recursive: true });
     
